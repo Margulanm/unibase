@@ -1,0 +1,66 @@
+a{
+    color:blue;
+    font-size:13px;
+}
+div{
+ color:rgba(255,0,0,0.5);
+}
+ 
+#a12{
+    color:green;
+}
+#bla{
+    color:#9da2b3;
+    font-size:20px;
+    border: 1px solid #323232;
+    background-color: #314530;
+}
+#bla:hover{
+    border:5px solid #323232;;
+}
+.human{
+    color:#4C8BF5;
+}
+.animal{
+     
+}
+.lion{
+    color:bisque;
+}
+.monkey{
+    color:violet;
+}
+.fish{
+    color:#4C8BF5;
+    background-color:violet;
+    border:1px dashed #323232;
+}
+.message{
+    color:#747474;
+    background-color:violet;
+    border:2px solid #323232;
+    font-size:20px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 1200px;
+    padding:15px;
+}
+.success{
+    background-color:#19A15F;
+    color:#ffffff;
+}
+.fail{
+    background-color:#f5d442;
+    color:#ffffff;
+}
+.info{
+    background-color:#92c0d1;
+    color:#ffffff;
+}
+.warning{
+    background-color: #8f4ea3;
+    color:#623670;
+}
+div:hover{
+    border: 10px solid #323232;
+}
