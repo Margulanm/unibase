@@ -1,0 +1,16 @@
+{
+    "univers": {
+        "usa": {
+            "title": "Университеты 123",
+            "preview": "/images/flag.png"
+        },
+        "kz": {
+            "title": "Университеты Казахстана",
+            "preview": "/images/kz.jpg"
+        },
+        "world": {
+            "title": "Университеты Мира",
+            "preview": "/images/kz2.jpg"
+        }
+    }
+}

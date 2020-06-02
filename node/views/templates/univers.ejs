@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- JS, Popper.js, and jQuery -->
+
+    <link rel="stylesheet" href="/css/usgenuni.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300i,400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <title>Unibase</title>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+
+
+
+
+    </head>
+<body>
+   
+    <nav class=" navbar navbar-expand-lg navbar-dark bg-dark">
+        <a href="index.html" class="ty">
+            
+           <p class="qw">Main</p> 
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <div class="container-fluid ">
+        <div class="images34 _back1 rounded shadow-sm ">
+                    <img src="<%= page_preview %>" width="100%" alt="">
+                </div>
+
+            <div class="name23 _back1 rounded shadow-sm">
+                        <p class="text100"><%= title %></p>
+            </div>
+
+</div>
+
+
+<div class="container-fluid">
+    <div class="small-container">
+        <div class="arts _back3" style="margin-top:50px">
+            <div class="row">
+                <div class="col">
+                    <p>
+                        <% univers.forEach( (univer) => { %>
+                            <span class="arttext2"><a href='/univers/<%= univer._id %>'><%= univer.name %></a></span>
+                            <hr>
+                        <% }); %>
+                    
+                        <!-- <span class="arttext2"><a href="usauni.html">MIT</a></span>
+                        <hr>
+                        <span class="arttext2"><a href="usauni.html">Stanford</a></span>
+                        <hr>
+                        <span class="arttext2"><a href="usauni.html">Harvard</a></span>
+                        <hr>
+                        <span class="arttext2"><a href="usauni.html">Yale</a></span>
+                        <hr>
+                        <span class="arttext2"><a href="usauni.html">Princeton</a></span>
+                        <hr>
+                        <span class="arttext2"><a href="usauni.html">Duke</a></span>
+                        <hr>
+                        <span class="arttext2"><a href="usauni.html">Brown</a></span>
+                        <hr>
+                        <span class="arttext2"><a href="usauni.html">Columbia</a></span>
+                        <hr>
+                        <span class="arttext2"><a href="usauni.html">UPenn</a></span>
+                        <hr>
+                        <span class="arttext2"><a href="usauni.html">Rice</a></span>
+                        <hr>
+                        <span class="arttext2"><a href="usauni.html">Vanderbilt</a></span>
+                        <hr>
+                        <span class="arttext2"><a href="usauni.html">Caltech</a></span>
+                        <hr>
+                        <span class="arttext2"><a href="usauni.html">Notre Dame</a></span>
+                        <hr>
+                        <span class="arttext2"><a href="usauni.html">UChicago</a></span>
+                        <hr>
+                        <span class="arttext2"><a href="usauni.html">Cornell</a></span>
+                        <hr>
+                        <span class="arttext2"><a href="usauni.html">UMich</a></span>
+                        <hr>
+                        <span class="arttext2"><a href="usauni.html">Georgetown</a></span>
+                        <hr>
+                        <span class="arttext2"><a href="usauni.html">UCLA</a></span>
+                        <hr>
+                        <span class="arttext2"><a href="usauni.html">Carnegie Mellon</a></span>
+                        <hr>
+                        <span class="arttext2"><a href="usauni.html">UCB</a></span><hr>
+                        <span class="arttext2"><a href="usauni.html">Wake Forest</a></span><hr>
+                        <span class="arttext2"><a href="usauni.html">NYU</a></span><hr>
+                        <span class="arttext2"><a href="usauni.html">Boston College</a></span><hr>
+                        <span class="arttext2"><a href="usauni.html">UT Austin</a></span><hr>
+    
+                        <span class="arttext2"><a href="usauni.html">Lehigh</a></span><hr>
+                        <span class="arttext2"><a href="usauni.html">Colgate</a></span><hr>
+                        <span class="arttext2"><a href="usauni.html">Florida</a></span><hr>
+                        <span class="arttext2"><a href="usauni.html">Boston University</a></span><hr>
+                        <span class="arttext2"><a href="usauni.html">Richmond</a></span><hr>
+                         
+    
+    
+                        <span class="arttext2"><a href="usauni.html">Urbana-Champaign</a></span><hr>
+                        <span class="arttext2"><a href="usauni.html">Kenyon</a></span><hr>
+                        <span class="arttext2"><a href="usauni.html">U Miami</a></span><hr>
+                        <span class="arttext2"><a href="usauni.html">UCSB</a></span><hr>
+                        <span class="arttext2"><a href="usauni.html">Brigham Young</a></span><hr>
+                        <span class="arttext2"><a href="usauni.html">Purdue</a></span><hr>
+                        <span class="arttext2"><a href="usauni.html">Tulane</a></span><hr>
+                        <span class="arttext2"><a href="usauni.html">Babson College</a></span><hr>
+                        <span class="arttext2"><a href="usauni.html">Penn State</a></span><hr>
+                        <span class="arttext2"><a href="usauni.html">Bentley</a></span><hr>
+                        <span class="arttext2"><a href="usauni.html">Iowa State</a></span><hr>
+                        <span class="arttext2"><a href="usauni.html">U of Oklahoma</a></span><hr>
+                        <span class="arttext2"><a href="usauni.html">Arizona State</a></span><hr>
+                        <span class="arttext2"><a href="usauni.html">Drake U</a></span><hr>
+                        <span class="arttext2"><a href="usauni.html">Miami Oh</a></span><hr>
+                        <span class="arttext2"><a href="usauni.html">Wyoming</a></span><hr> -->
+                        
+    
+                    </p>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+    
+</body>
+
+
+
+
+
+    

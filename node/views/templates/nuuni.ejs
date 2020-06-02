@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <!-- JS, Popper.js, and jQuery -->
+      <link rel="stylesheet" href="/css/usauni.css">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+      <title>Usauni</title>
+   </head>
+   <body>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+         crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+         crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+         crossorigin="anonymous"></script>
+      <nav class=" navbar navbar-expand-lg navbar-dark bg-dark">
+         <a href="#" class="navbar-brand">
+         <img src="./images/faqimac.png" width="30" height="30" alt="logo">
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+      </nav>
+      <div class="container-fluid ">
+         <div class="images34 _back1 rounded shadow-sm ">
+            <img src="<%= univer.preview %>" width="100%" alt="">
+         </div>
+         <div class="name23 _back1 rounded shadow-sm">
+            <p class="text100"><%= univer.name %></p>
+         </div>
+      </div>
+      <div class="container-fluid rounded ">
+         <div class="unifacts23 _back3 rounded shadow-sm">
+            <p class="unifact "> <%= univer.description %></p>
+         </div>
+
+         <% if(univer.tips.length > 0){ %>
+            <div class="oh2 _back3 rounded shadow-sm">
+               <div class="row m-0 p-0">
+                  <% univer.tips.forEach( tip => {%>
+                  <div class="col-lg-4 col-md-6" style="background-color: white;">
+                     <p> <span class="colortext"><%= tip.title %></span><br>
+                     <hr>
+                     <span class="lone"><%= tip.text %></span>
+                     </p>
+                  </div>
+                  <% }); %>
+               </div>
+            </div>
+         <% }; %>
+
+         <% if(univer.requirements.length > 0){ %>
+            <div class="req  _back3 rounded shadow-sm">
+               <div class="kal">
+                  <h1 class="jol">Требования к поступлению</h1>
+               </div>
+               <% univer.requirements.forEach( (require, index) => { %>
+                  <div class="item">
+                  <div class="num">
+                     <div class="num-border">
+                           <span><%= index+1 %></span>
+                     </div>
+                  </div>
+                  <div class="text">
+                     <h4><%= require.title %></h4>
+                     <p> 
+                           <span class="lone"><%= require.text %></span>
+                     </p>
+                  </div>
+                  </div>
+               <% }); %>
+            </div>
+         <% }; %>
+
+         <% if(univer.grants.length > 0){ %>
+         <div class="reqtwo _back3 rounded ">
+            <div class="grants" style="padding-top:20px; text-align: center;">
+               <h1 class="jol8">Гранты предоставляемые университетом:</h1>
+            </div>
+            <div class="row">
+               <% univer.grants.forEach( (grant, index) => { %>
+                <div class="col-lg-6">
+                    <div class="item">
+                        <div class="num">
+                            <div class="num-border">
+                                <span><%= index+1 %></span>
+                            </div>
+                        </div>
+                        <div class="text6">
+                            <h4><%= grant.title %></h4>
+                            <p> 
+                                <span class="lone2"><%= grant.text %></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+               <% }); %>
+            </div>
+         </div>
+         <% }; %>
+
+
+         <div class="reqtwo _back3 rounded ">
+            
+            <div class="row">
+            <div class="col-lg-6">
+                <div class="item">
+                    <div class="num23">
+                        <div class="num-border23">
+                            <span class="galo"></span>
+                        </div>
+                    </div>
+                    <div class="text6">
+                        <h4>Общежитие</h4>
+                        <p> <span class="lone2">Назарбаев Университет имеет 7 жилых блоков, обеспечивая 80% своих студентов жильем</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="item">
+                    <div class="num">
+                        <div class="num-border">
+                            <span class="galo"></span>
+                        </div>
+                    </div>
+                    <div class="text7">
+                        <h4>Спорт</h4>
+                        <p> <span class="lone2">Назарбаев Университет имеет сборные команды по Баскетболу (Мужской/Женский), Волейболу (Мужской/Женский), Плаванию и Легкой Атлетике</span></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="item">
+                    <div class="num">
+                        <div class="num-border">
+                            <span class="galo"></span>
+                        </div>
+                    </div>
+                    <div class="text6">
+                        <h4>Кружки</h4>
+                        <p> <span class="lone2">На кампусе Назарбаев Университета имеется более чем 100 студенческих клубов и организаций</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="item">
+                    <div class="num">
+                        <div class="num-border">
+                            <span class="galo2"></span>
+                        </div>
+                    </div>
+                    <div class="text7">
+                        <h4>Военная кафедра</h4>
+                        <p> <span class="lone2">В Назарбаев Университете нет военной кафедры</span></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="item">
+                    <div class="num">
+                        <div class="num-border">
+                            <span class="galo"></span>
+                        </div>
+                    </div>
+                    <div class="text6">
+                        <h4>Гранты</h4>
+                        <p> <span class="lone2">Назарбаев Университет предоставялет 3 вида образовательных грантов: Грант Назарбаев Университета, грант "Ыбырай Алтынсарин" и грант "Абай Кунанбаев"</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="item">
+                    <div class="num">
+                        <div class="num-border">
+                            <span class="galo2"></span>
+                        </div>
+                    </div>
+                    <div class="text7">
+                        <h4>Международное признание</h4>
+                        <p> <span class="lone2">Назарбаев Университет не был аккредитирован международными организациями</span></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+         
+         <% if(univer.faculties.length > 0 || univer.price){ %>
+            <div class="faculties2 _back3">
+               <div class="heading1">
+                  <p class="jol3">Факультеты и цена обучения в MIT</p>
+               </div>
+               <div class="col">
+                  <div class="heading2" style="margin-top:2px;">
+                     <p class="jol4"><%= univer.price %></p>
+                  </div>
+               </div>
+               <% univer.faculties.forEach( faculty => { %>
+                  <div class="arts" style="margin-top:50px">
+                     <div class="row">
+                           <div class="col">
+                              <p>
+                                 <span class="arttext"><%= faculty.name %></span><br>
+                                 <% faculty.subjects.forEach( subject => {%>
+                                 <span class="arttext2"><%= subject %></span>
+                                 <hr>
+                                 <% }); %>
+                              </p>
+                           </div>
+                     </div>
+                  </div>
+               <% }); %>
+            </div>
+         <% }; %>
+      </div>
+      <div class="uscontacts">
+         <div class="uniname" style="font-size:20px;">
+            <p st>Unibase</p>
+            <hr class="wer">
+         </div>
+         <div class="googlemaps">
+            <div class="row">
+               <% if(univer.location){ %>
+               <div class="col-lg-7 col-md-12">
+                  <div style="position:relative;overflow:hidden;"><a href="https://yandex.kz/maps/org/130789122220/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;"><%= univer.name %></a><a href="https://yandex.kz/maps/102589/cambridge/category/university_college/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">ВУЗ в Кембридже</a><iframe src='<%= univer.location %>' width="900" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+               </div>
+               <% }; %>
+
+               <div class="unicontacts">
+                  <p class="text78">
+                     Контакты университета:
+                  </p>
+                  <p class="text79">
+                     <%= univer.phone %><br>
+                     <%= univer.email %>
+                  </p>
+                  <p class="text80">
+                     <%= univer.address %><br>
+                     <a href="<%= univer.website %>"><%= univer.website %></a>
+                  </p>
+               </div>
+            </div>
+         </div>
+      <div class="container-fluid">
+         <div class="rights">
+            <div class="rights2">
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
