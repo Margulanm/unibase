@@ -48,7 +48,11 @@ const univerShema = new mongoose.Schema({
     phone: String,
     email: String,
     address: String,
-    website: String
+    website: String,
+    pol: {
+        type: String
+       
+    },
 });
 
 const Univer = mongoose.model('Univer', univerShema);

@@ -23,18 +23,23 @@
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
          integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
          crossorigin="anonymous"></script>
-      <nav class=" navbar navbar-expand-lg navbar-dark bg-dark">
-         <a href="#" class="navbar-brand">
-         <img src="./images/faqimac.png" width="30" height="30" alt="logo">
-         </a>
-         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#">
-         <span class="navbar-toggler-icon"></span>
-         </button>
-      </nav>
+         <nav class=" navbar navbar-expand-lg navbar-dark bg-dark">
+   
+            <a href="#" class="navbar-brand">
+                <img class="header_logo" src="/images/home7.jpg">
+            </a>
+            <a href="index.html" class="ty"> 
+               <p class="qw">Меню</p> 
+            </a>
+            <a href="index.html" class="ty" style="margin-left: 30px;"> 
+                <p class="qw">Назад</p> 
+             </a>
+        </nav>
       <div class="container-fluid ">
          <div class="images34 _back1 rounded shadow-sm ">
             <img src="<%= univer.preview %>" width="100%" alt="">
          </div>
+
          <div class="name23 _back1 rounded shadow-sm">
             <p class="text100"><%= univer.name %></p>
          </div>
@@ -87,6 +92,15 @@
             <div class="grants" style="padding-top:20px; text-align: center;">
                <h1 class="jol8">Гранты предоставляемые университетом:</h1>
             </div>
+            <% if(univer.pol){%>
+
+
+            <div class="grants" style="padding-top:20px; text-align: center;">
+
+               <h1 class="jol9"><%=univer.pol %></h1>
+
+           </div>
+     <% }%>
             <div class="row">
                <% univer.grants.forEach( (grant, index) => { %>
                 <div class="col-lg-6">
@@ -112,7 +126,7 @@
          <% if(univer.faculties.length > 0 || univer.price){ %>
             <div class="faculties2 _back3">
                <div class="heading1">
-                  <p class="jol3">Факультеты и цена обучения в MIT</p>
+                  <p class="jol3">Факультеты и цена обучения в <%= univer.namr %></p>
                </div>
                <div class="col">
                   <div class="heading2" style="margin-top:2px;">
@@ -146,7 +160,7 @@
             <div class="row">
                <% if(univer.location){ %>
                <div class="col-lg-7 col-md-12">
-                  <div style="position:relative;overflow:hidden;"><a href="https://yandex.kz/maps/org/130789122220/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;"><%= univer.name %></a><a href="https://yandex.kz/maps/102589/cambridge/category/university_college/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">ВУЗ в Кембридже</a><iframe src='<%= univer.location %>' width="900" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                  <div style="position:relative;overflow:hidden;"><a href="<%= univer.map %>" style="color:#eee;font-size:12px;position:absolute;top:0px;"></a><a href="https://yandex.kz/maps/102589/cambridge/category/university_college/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">ВУЗ в Кембридже</a><iframe src='<%= univer.location %>' width="900" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
                </div>
                <% }; %>
 
@@ -160,6 +174,7 @@
                   </p>
                   <p class="text80">
                      <%= univer.address %><br>
+                     <%= univer.addres2 %>
                      <a href="<%= univer.website %>"><%= univer.website %></a>
                   </p>
                </div>
