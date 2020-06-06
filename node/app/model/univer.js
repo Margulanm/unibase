@@ -33,9 +33,12 @@ const univerShema = new mongoose.Schema({
     grants: {
         type: [{
             title: String,
-            text: String
-        }]
+            text: String,
+        }
+    ]
     },
+    pol:String,
+        
     faculties: {
         type: [{
             name: String,
@@ -49,10 +52,7 @@ const univerShema = new mongoose.Schema({
     email: String,
     address: String,
     website: String,
-    pol: {
-        type: String
-       
-    },
+
 });
 
 const Univer = mongoose.model('Univer', univerShema);
