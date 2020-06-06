@@ -5,39 +5,74 @@ const config = require('./config.js');
 const fs = require('fs');
 const model = `[
     {
-        "name": "referf",
-        "description": "erferffreeeeeeeeeeeeeeeeeeeeee",
+     
+        "name":"",
+        "description": "",
         "preview": "",
-        "country": "kz",
+        "country": "usa",
         "tips": [
             {
                 "title": "",
                 "text": ""
+            },
+            {
+                "title": "",
+                "text": ""
             }
+            
         ],
         "requirements": [
             {
                 "title": "",
                 "text": ""
-            }
-        ],
-        "grants": [
+            },
+            {
+                "title": "",
+                "text": ""
+            },
+            {
+                "title": "",
+                "text": ""
+            },
             {
                 "title": "",
                 "text": ""
             }
         ],
-        "faculties": [{
+        "pol":"",
+        "grants": [
+            {
+                "title": "",
+                "text": ""
+            },
+            {
+                "title": "",
+                "text": ""
+            }
+        ],
+        "faculties": [
+            {
             "name": "",
             "subjects": [""] 
-        }],
+            },
+            {
+                "name": "",
+                "subjects": [""] 
+                
+            },
+            {
+                "name": "",
+                "subjects": [""] 
+            }
+        ],
     
         "price": "",
-        "location": "",
         "phone": "",
         "email": "",
         "address": "",
-        "website": ""
+        "address2": "",
+        "website": "",
+        "location": ""
     }
 ]`;
 
