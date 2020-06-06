@@ -41,7 +41,7 @@
          </div>
 
          <div class="name23 _back1 rounded shadow-sm">
-            <p class="text100"><%= univer.name %></p>
+            <p class="text100"><%= univer.namew %></p>
          </div>
       </div>
       <div class="container-fluid rounded ">
@@ -93,14 +93,10 @@
                <h1 class="jol8">Гранты предоставляемые университетом:</h1>
             </div>
             <% if(univer.pol){%>
-
-
-            <div class="grants" style="padding-top:20px; text-align: center;">
-
-               <h1 class="jol9"><%=univer.pol %></h1>
-
-           </div>
-     <% }%>
+               <div class="grants" style="padding-top:20px; text-align: center;">
+                  <h1 class="jol9"><%=univer.pol %></h1>
+              </div>
+        <% }%>
             <div class="row">
                <% univer.grants.forEach( (grant, index) => { %>
                 <div class="col-lg-6">
@@ -126,7 +122,7 @@
          <% if(univer.faculties.length > 0 || univer.price){ %>
             <div class="faculties2 _back3">
                <div class="heading1">
-                  <p class="jol3">Факультеты и цена обучения в <%= univer.namr %></p>
+                  <p class="jol3">Факультеты и цена обучения в <%= univer.name %></p>
                </div>
                <div class="col">
                   <div class="heading2" style="margin-top:2px;">

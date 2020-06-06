@@ -6,6 +6,11 @@ const univerShema = new mongoose.Schema({
         required: true,
         unique: true
     },
+    namew: {
+        type: String,
+        required: true,
+        unique: true
+    },
     description: {
         type: String,
         required: true
@@ -38,7 +43,7 @@ const univerShema = new mongoose.Schema({
     ]
     },
     pol:String,
-        
+    
     faculties: {
         type: [{
             name: String,
