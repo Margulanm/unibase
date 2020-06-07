@@ -6,7 +6,7 @@ const univerShema = new mongoose.Schema({
         required: true,
         unique: true
     },
-    namew: {
+    namerus: {
         type: String,
         required: true,
         unique: true
