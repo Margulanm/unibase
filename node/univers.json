@@ -1,72 +1,94 @@
 [
     {
-     
-        "name":"",
-        "description": "",
-        "preview": "",
-        "country": "usa",
+        "name": "MIwereT",
+       
+        "description": "MIT является элитным частным университетом, расположенным в Кеймбридже, штат Массачусетс. Приемная комиссия данного университета крайне требовательна, что подтверждается показателем приема равным ~3-4% относительно международных абитуриентов. Популярные специальности включают компьютерные науки, машиностроение и математику.",
+        "preview": "/images/mit.png",
+        "country": "kz",
         "tips": [
             {
-                "title": "",
-                "text": ""
+                "title": "1 января",
+                "text": "Дедлайн подачи документов для поступающих"
             },
             {
-                "title": "",
-                "text": ""
+                "title": "1 место",
+                "text": "Среди лучших университетов США, Лучшая цена на обучение в США, Уровень обучения в США"
+            },
+            {
+                "title": "84%",
+                "text": "Студентов университета получают финансовую помощь"
             }
-            
         ],
         "requirements": [
             {
-                "title": "",
-                "text": ""
+                "title": "MyMIT: Биография",
+                "text": "Базовая информация о себе, родителях, школе и предмете который вы хотите выбрать."
             },
             {
-                "title": "",
-                "text": ""
+                "title": "MyMIT: Эссе и ваша деятельность, занятия, достижения и т.д.",
+                "text": "MIT не требует одно длинное эссе. Для поступления вам необходимо ответить на 5 конкретных вопросов в развернутом виде и добавить что-то от себя при необходимости в дополнительной секции. MIT предоставляет только 4 секции для того, чтобы расписать вашу прошлую деятельность, занятия, достижения и т.д."
             },
             {
-                "title": "",
-                "text": ""
+                "title": "ApplyWithUs: Рекомендательные письма класса 'А' и класса 'В'",
+                "text": "MIT в обязательном порядке запрашивает два рекомендательных письма от ваших учителей, менторов и т.д. Первое обязательно должно быть от учителя математики или представителя другой сферы точных наук, а второе обязательно должно быть от представителя гуманитарных наук."
             },
             {
-                "title": "",
-                "text": ""
+                "title": "MyMIT: Аттестат об окончании старшей школы с оценками",
+                "text": "Школьный профориентатор (если нет, директор) отправляет ваш аттестат об окончании старшей школы с оценками и также может приложить собственное рекомендательное письмо и вашу школьную анкету."
+            },
+            {
+                "title": "MyMIT: Результаты стандартизированных тестов",
+                "text": "MIT требует результаты SAT/ACT, 2-х SAT Subjects, но не требует SAT optional essay или ACT writing section. Также MIT требует результаты TOEFL, но не принимает результаты IELTS. Минимальных проходных баллов нет, но средний балл поступивших был между 1490-1570 по SAT и 33-35 по ACT. MIT рекомендует набирать как минимум 90 баллов по TOEFL."
             }
         ],
-        "pol":"",
         "grants": [
             {
-                "title": "",
-                "text": ""
+                "title": "Стипендия MIT",
+                "text": "Все студенты которые подают на финансовую помощь рассматриваются на получение данной стипендии"
             },
             {
-                "title": "",
-                "text": ""
+                "title": "Грант на первый год обучения",
+                "text": "MIT предоставляет грант для малообеспеченных студентов первого курса в размере 2000$ каждый семестр, чтобы помочь с дополнительными расходами."
             }
         ],
         "faculties": [
             {
-            "name": "",
-            "subjects": [""] 
+            "name": "Arts",
+            "subjects": ["Drama and Theatre Production"] 
             },
             {
-                "name": "",
-                "subjects": [""] 
+            "name": "Business",
+            "subjects": ["Business","Management Sciences and Information Systems"] 
+            },
+            {
+            "name": "Humanities",
+            "subjects": ["Cognitive Science","Communications","Creative Writing","Economics","English","Liberal Arts and Humanities","Linguistics, Interpretation, and Translation","Music History and Literature","Philosophy","Political Science and Government","Urban, Community and Regional Planning"] 
+
+
+            },
+
+            {
+                "name": "Science, Technology, and Math",
+                "subjects": ["Aerospace Engineering","Architecture","Bioengineering and Biomedical Engineering","Bioinformatics","Biology","Chemical Engineering","Chemistry","Civil Engineering","Computational and Applied Mathematics","Computer Science","Electrical Engineering","Environmental Engineering","Geology and Earth Science","Materials Engineering","Mathematics","Mechanical Engineering","Neuroscience and Neurobiology","Nuclear Engineering","Physics"
+                ] 
+    
                 
-            },
-            {
-                "name": "",
-                "subjects": [""] 
-            }
+                }
+
+            
+
         ],
     
-        "price": "",
-        "phone": "",
-        "email": "",
-        "address": "",
-        "address2": "",
-        "website": "",
-        "location": ""
+        "price": "Все расходы/Только обучение: 73 160$/53 450$",
+        "location": "https://yandex.kz/map-widget/v1/-/CCQjEIXZgC",
+        "phone": " +1 617-253-1000",
+        "email": "admissions@mit.edu",
+        "address": "77 Massachusetts Avenue",
+        "address2": " Cambridge, MA 02139",
+        "website": "http://web.mit.edu/"
     }
 ]
+
+
+
+
