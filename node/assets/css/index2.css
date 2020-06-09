@@ -12,7 +12,21 @@
    
 }
 
-
+.foot{
+    background-color:#222;
+    padding:10px;
+    height:100px;
+ }
+ .copy{
+     
+     padding-top:10px;
+     font-size:16px;
+ }
+ .copy2{
+     
+   
+    font-size:16px;
+}
 @media (min-width: 560.98px)
  {
      .logo{

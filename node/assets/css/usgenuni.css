@@ -69,13 +69,13 @@ padding:20px;
 }
 a:hover {
     text-decoration:none !important;
-    color: #ffd791;
+    color: #6b6f75;
     }
 a{
     color:black;
 }
 .ty{
-    color:#59A44D;
+    color:#b3b2b8;
 }
 .qw{
     font-size:27px;
@@ -96,3 +96,22 @@ a{
     width:100px;
     height: 100px;
 }
+
+.header_logo{
+    width:40px;
+    height:40px;
+}
+
+.btn {
+    background-color: DodgerBlue; /* Blue background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: RoyalBlue;
+  }
