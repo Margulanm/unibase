@@ -104,14 +104,19 @@
             </div>
          <% }; %>
 
-         <% if(univer.grants.length > 0||univer.pol){ %>
+         <% if(univer.grants.length > 0||univer.pol||univer.pollink){ %>
          <div class="reqtwo _back3 rounded ">
             <div class="grants" style="padding-top:20px; text-align: center;">
                <h1 class="jol8">Гранты предоставляемые университетом:</h1>
             </div>
             <% if(univer.pol){%>
-               <div class="grants" style="padding-top:20px; text-align: center;">
+               <div class="grants" style="padding-top:20px; padding-bottom:20px;text-align: center;">
                   <h1 class="jol9"><%=univer.pol %></h1>
+              </div>
+              <% }; %>
+              <% if(univer.pollink){%>
+               <div class="grants" style="padding-top:20px; padding-bottom:20px;text-align: center;">
+                  <h1 class="jol9"><%=univer.pollink %></h1>
               </div>
               <% }; %>
       

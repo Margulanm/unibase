@@ -43,7 +43,7 @@ const univerShema = new mongoose.Schema({
     ],
     },
     pol:String,
-   
+    pollink:String,
    
     
     faculties: {
