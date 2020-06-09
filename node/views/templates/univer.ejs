@@ -23,18 +23,37 @@
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
          integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
          crossorigin="anonymous"></script>
-         <nav class=" navbar navbar-expand-lg navbar-dark bg-dark">
-   
-            <a href="#" class="navbar-brand">
-                <img class="header_logo" src="/images/home7.jpg">
-            </a>
-            <a href="index.html" class="ty"> 
-               <p class="qw">Меню</p> 
-            </a>
-            <a href="index.html" class="ty" style="margin-left: 30px;"> 
-                <p class="qw">Назад</p> 
-             </a>
-        </nav>
+
+        
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a href="#" class="navbar-brand">
+         <img class="header_logo" src="/images/home7.jpg">
+     </a>
+      <a class="navbar-brand" href="#">Меню</a>
+      <a class="navbar-brand" href="#">Университеты</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Контакты</a>
+          </li>
+  
+    
+        </ul>
+
+      </div>
+    </nav>
+
+
+
+
+
+
       <div class="container-fluid ">
          <div class="images34 _back1 rounded shadow-sm ">
             <img src="<%= univer.preview %>" width="100%" alt="">
@@ -96,7 +115,8 @@
                <div class="grants" style="padding-top:20px; text-align: center;">
                   <h1 class="jol9"><%=univer.pol %></h1>
               </div>
-        <% }%>
+              <% }; %>
+      
             <div class="row">
                <% univer.grants.forEach( (grant, index) => { %>
                 <div class="col-lg-6">
@@ -116,6 +136,7 @@
                 </div>
                <% }); %>
             </div>
+            
          </div>
          <% }; %>
 

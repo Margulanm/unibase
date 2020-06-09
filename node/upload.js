@@ -7,7 +7,7 @@ const model = `[
     {
      
         "name":"",
-        "namerus":"",s
+        "namerus":"",
         "description": "",
         "preview": "",
         "country": "usa",

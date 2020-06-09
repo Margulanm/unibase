@@ -40,9 +40,11 @@ const univerShema = new mongoose.Schema({
             title: String,
             text: String,
         }
-    ]
+    ],
     },
     pol:String,
+   
+   
     
     faculties: {
         type: [{
