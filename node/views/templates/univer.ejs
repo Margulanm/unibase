@@ -27,11 +27,14 @@
         
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a href="#" class="navbar-brand">
+      <a href="main.ejs" class="navbar-brand">
          <img class="header_logo" src="/images/home7.jpg">
      </a>
-      <a class="navbar-brand" href="usauni.html">Меню</a>
+     <!--
+  <a class="navbar-brand" href="usauni.html">Меню</a>
       <a class="navbar-brand" href="#">Университеты</a>
+     -->
+   
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -98,6 +101,9 @@
                      <p> 
                            <span class="lone"><%= require.text %></span>
                      </p>
+                     -
+
+
                   </div>
                   </div>
                <% }); %>
@@ -117,10 +123,11 @@
 
               <% if(univer.pollink){%>
                <div class="grants" style="padding-top:20px; padding-bottom:20px;text-align: center;">
-                  <h1 class="jol9"> <a href="<%= univer.pollink %>"><%= univer.pollink %></a></h1>
+                  <h1 class="jol9"> <a href="<%= univer.pollink %>">Scholarships</a></h1>
               </div>
 
-              <% }; %>
+              <% } %>
+              
       
             <div class="row">
                <% univer.grants.forEach( (grant, index) => { %>
@@ -145,7 +152,7 @@
          </div>
          <% }; %>
 
-         <% if(univer.faculties.length > 0 || univer.price){ %>
+         <% if(univer.faculties.length > 0 || univer.price ){ %>
             <div class="faculties2 _back3">
                <div class="heading1">
                   <p class="jol3">Факультеты и цена обучения в <%= univer.name %></p>
@@ -154,6 +161,8 @@
                   <div class="heading2" style="margin-top:2px;">
                      <p class="jol4"><%= univer.price %></p>
                   </div>
+    
+              
                </div>
                <% univer.faculties.forEach( faculty => { %>
                   <div class="arts" style="margin-top:50px">
