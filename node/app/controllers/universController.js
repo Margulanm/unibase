@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Univer = require('../model/Univer');
+const Univer = require('../model/univer');
 
 const getUniverList = 
     async (country) => {
