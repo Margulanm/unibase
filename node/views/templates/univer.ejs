@@ -150,7 +150,12 @@
                      <p class="jol4"><%= univer.price %></p>
                   </div>
     
-              
+                             <% if(univer.pricepol){%>
+               <div class="grants" style="padding-top:20px; padding-bottom:20px;text-align: center;">
+                  <h1 class="jol9"> <a href="<%= univer.pricepol %>"></a><%= univer.pricepol %></h1>
+              </div>
+
+              <% } %>
                </div>
                <% univer.faculties.forEach( faculty => { %>
                   <div class="arts" style="margin-top:50px">
