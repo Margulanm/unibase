@@ -54,6 +54,7 @@ const univerShema = new mongoose.Schema({
     },
 
     price: String,
+     pricepol: String,
     location: String,
     phone: String,
     email: String,
