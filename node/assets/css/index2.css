@@ -73,7 +73,7 @@
          object-fit:none; */
          min-height: 50vh;
          background-size: cover;
-         padding-top:5px;
+         padding-top:80px !important;
         };
     
 }
@@ -167,6 +167,12 @@ font-size:50px;
 }
 .kop2{
     color: black;
+    font-weight: 700;
+}
+.kop6{
+    color: black;
+    font-weight: 700;
+    font-size:35px;
 }
 .mj{
     border-bottom:2px solid #F38181;
