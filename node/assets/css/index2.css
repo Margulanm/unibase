@@ -79,11 +79,18 @@
 .lop{
     color:white;
     font-weight:400;
-    font-size: 40px;
+    font-size: 100px;
 }
 .lop2{
     color:white;
     font-size: 16px;
+}
+@media (max-width: 560.98px)
+ {
+     .lop{
+        font-size: 50px !important;
+        };
+    
 }
 
 
