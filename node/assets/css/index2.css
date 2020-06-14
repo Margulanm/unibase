@@ -157,6 +157,10 @@ font-family: 'Montserrat', sans-serif;
 font-size:50px;
 
 }
+
+.ques{
+    padding-top:100px;
+}
 .kop{
     color: black;
     border-bottom:2px solid #F38181;
