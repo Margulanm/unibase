@@ -146,7 +146,8 @@ font-size:50px;
     border-bottom:2px solid #F38181;
     padding-bottom:20px;
     font-weight:normal;
- 
+    font-weight:700;
+    font-size:70px;
 }
 .kop2{
     color: black;
