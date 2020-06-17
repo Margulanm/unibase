@@ -179,14 +179,14 @@ font-size:50%;
 }
 .jol{
     text-align: center;
-    color:#59A44D;
+    color:red;
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
    
 }
 .jol8{
    margin:0 auto;
-    color:#59A44D;
+    color:red;
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
 }
@@ -246,7 +246,7 @@ font-size:50%;
     background-color: white;
 }
 .jol3{
-    color:#59A44D;
+    color:red;
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
    text-align: center;
