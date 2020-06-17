@@ -179,7 +179,7 @@ font-size:50%;
 }
 .jol{
     text-align: center;
-    color:red;
+    color:#019BE0;
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
    
@@ -246,7 +246,7 @@ font-size:50%;
     background-color: white;
 }
 .jol3{
-    color:red;
+    color:#019BE0;
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
    text-align: center;
@@ -285,7 +285,7 @@ font-size:50%;
     margin:0 auto;
 }
 .arttext{
-    color:#59A44D;
+    color:#019BE0;
   
     font-size: 25px;
 }
@@ -309,7 +309,7 @@ font-size:50%;
 .uniname{
     width:75%;
     margin:0 auto;
- color:#59A44D;
+ color:#019BE0;
  font-weight: bolder;
  
 }
@@ -360,7 +360,7 @@ font-size:50%;
 .text100{
     font-size:23px;
   text-align:center;
- color:#59A44D;
+ color:#019BE0;
  font-weight: bolder;
 }
 
